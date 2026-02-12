@@ -4,47 +4,56 @@
              <meta charset="utf-8"> 
              <title>Zadanie_9</title> 
         </head> 
-        <body> 
- Opis powinien zawierać:
-        <ol type="1"> 
-       <li> <b>Składnia teoretyczna → otoczony ramką (może być tabela jedno komórkowa, 
-        konieczne wcięcia). </b></li>
-        <textarea>
-            <head> 
-    (...) 
-        <link rel="Stylesheet" type="text/css" href="style.css" /> 
-    (...) 
-            </head> </textarea>
+        <body>
+        <h1>zewnętrzny arkusz styli</h1>
+        <h1>1. Składnia teoretyczna</h1>
+        <textarea disabled style="width: 95%; height: 80px; overflow: hidden;">
+<head>
+    (...)
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    (...)
+</head>
+        </textarea> 
 
-        <li><b>Gdzie wstawiany jest  styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz 
-        ile razy może on występować w dokumencie, jako podłączenie stylu CSS?</b></li>
-                Wstawienie →wystarczy wpisać w treści nagłówkowej każdego z dokumentów (pomiędzy 
-                znacznikami <.head> a <./head>), przedstawioną powyżej linijkę
-        <li><b>Jak jest najprostsza forma wstawiania stylu zewnętrznego → otoczony ramką (może 
-                być tabela jedno komórkowa? </b></li>
+<h1>2. Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz
+ile razy może on występować w dokumencie, jakopodłączenie stylu CSS?</h1>
+Znacznik LINK może znajdować się tylko i wyłącznie w nagłówku dokumentu (sekcja head), może on występować nieskończoność razy.
 
-        <li><b>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad 
-        musi być zachowana przy większej ilości dołączanych styli? </b></li>
+<h1>3. Jak jest najprostsza forma wstawiania stylu zewnętrznego</h1>
+<table align="center" border="1" style="border-collapse: collapse; overflow: hidden;">
+    <tr>
+        <td>
+            &lt;link rel="Stylesheet" /&gt;
+        </td>
+    </tr>
+</table>
 
-        <li><b>Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style 
-        są definiowane w różnych arkuszach styli podłączone do tego samego arkusza. </b></li>
+<h1>4. Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad
+musi być zachowana przy większej ilości dołączanych styli?</h1>
+można dołączyć dowolną liczbę zewnętrznych arkuszy stylów
+- każdy jako osobny element &lt;link rel="Stylesheet" /&gt;.
 
-        <li><b>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego? </b></li>
+<h1>5. Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style
+są definiowane w różnych arkuszach styli podłączone do tego samego arkusza.</h1>
+W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później.
 
-        <li><b>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?  </b></li>
+<h1>6. Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1>
+Zewnętrzny arkusz stylów jest zwykłym plikiem tekstowym. Do tworzenia i
+edytowania wystarczy zwykły edytor tekst.
 
-        <li><b>Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli? </b></li>
+<h1>7. Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1>
+Wygląda to tak samo, jak w zwykłym edytorze, oprócz róznych podkreśleń i pomocy w pisaniu plikow .css
 
-        <li><b>Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia? </b></li>
-        <ol type="1"> 
-                Zalety zewnętrznego arkusza styli: 
-                <li>wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy.  </li> 
-                <li>jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich 
-                stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez 
-                konieczności zmiany każdej strony osobno. </li>
-        </ol> 
-        <li><b>Uwagi na temat pisania w CSS.</b></li>
+<h1>8. Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?</h1>
+Plik będący zewnętrznym arkuszem stylów musi mieć
+rozszerzenie *.css
 
-</ol>
-        </body> 
+<h1>9. Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia?</h1>
+1)wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy.<br>
+2) jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich<br>
+stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez<br>
+konieczności zmiany każdej strony osobno.
+
+        </body>
+
   </html> 
